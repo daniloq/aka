@@ -1,5 +1,7 @@
 // Typography
-$sans-serif: $helvetica;
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+$sans-serif: 'Quicksand', sans-serif;
 $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;

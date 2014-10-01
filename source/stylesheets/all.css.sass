@@ -4,6 +4,57 @@
 @import "base/base"
 @import "neat"
 
+.boom
+  background: rgba(0,0,0,0.4)
+  width: 100%
+  height: 100vh
+
 article
-  +outer-container
-  text-align: center
+  margin-top: 10em
+  +span-columns(4)
+  +shift(4)
+  color: white
+  h1
+    margin-bottom: 0.75em
+  a
+    color: rgba(255,255,255,0.6)
+    padding-bottom: 0.15em
+    border-bottom: 1px dotted rgba(255,255,255,0.4)
+    &:hover
+      color: white
+  +media($neatness)
+    margin: 0
+    padding: 30px
+    +span-columns(12)
+    +shift(0)
+
+video#video
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -100
+  // background: url(polina.jpg) no-repeat
+  background-size: cover
+
+br
+  +media($neatness)
+    display: none
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+  li
+    display: inline-block
+    margin-right: 0.75em
+    vertical-align: middle
+    a
+      padding-bottom: 0
+      border-bottom: none
+      font-size: 1.7em
+      &.bigger
+        font-size: 2.45em
