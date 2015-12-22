@@ -34,6 +34,7 @@ body.work
 
 small
   text-transform: uppercase
+  color: darken(whitesmoke, 20%)
   font:
     family: 'San Francisco'
     weight: 700
@@ -72,7 +73,20 @@ section.work
       size: rem(40)
       weight: 700
     color: #303841
-    margin: rem(10) 0 rem(100) 0
+    margin: rem(10) 0 0 0
+    line-height: 0
+    img
+      width: rem(333)
+      margin: 0
+      +media($neatness)
+        width: rem(200)
+  small
+    margin: 0 auto rem(120)
+    display: block
+    +media($neatness)
+      width: rem(200)
+      font-size: rem(8)
+      margin: 0 auto rem(30)
   h2
     font:
       family: 'San Francisco'
