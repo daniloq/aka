@@ -1,0 +1,57 @@
+.boom
+  background: rgba(0,0,0,0.4)
+  width: 100%
+  height: 100vh
+  min-height: 100%
+  +display(flex)
+  +align-items(center)
+  +justify-content(center)
+  +clearfix
+  article
+    max-width: rem(475)
+    color: white
+    +clearfix
+  h1
+    margin-bottom: rem(18)
+  a
+    color: rgba(255,255,255,0.6)
+    padding-bottom: rem(4)
+    text-decoration: none
+    border-bottom: rem(1) dotted rgba(255,255,255,0.4)
+    &:hover
+      color: white
+  +media($neatness)
+    margin: 0
+    padding: 30px
+    +span-columns(12)
+    +shift(0)
+  h1, p
+    font-size: rem(24)
+    line-height: rem(40)
+  video#video
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    background-size: cover
+    +media($neatness)
+      display: none
+  br
+    +media($neatness)
+      display: none
+  ul
+    margin: rem(48) 0 0 0
+    padding: 0
+    list-style: none
+    li
+      display: inline-block
+      margin-right: rem(12)
+      vertical-align: middle
+      a
+        padding-bottom: 0
+        border-bottom: none
+        font-size: rem(27)
