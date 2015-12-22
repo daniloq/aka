@@ -29,6 +29,8 @@ body.work
     weight: 400
     size: rem(18)
   padding-top: rem(120)
+  +media($neatness)
+    padding-top: rem(30)
 
 small
   text-transform: uppercase
@@ -62,6 +64,8 @@ section.work
   article
     margin: 0 auto
     max-width: rem(1200)
+    +media($neatness)
+      padding: 0 rem(10)
   h1
     font:
       family: 'San Francisco'
@@ -77,9 +81,14 @@ section.work
     padding-top: rem(60)
     &:not(:first-child)
       border-top: rem(1) solid darken(whitesmoke, 20%)
+    +media($neatness)
+      font-size: rem(18)
   p
     max-width: rem(800)
     margin:  0 auto
+    +media($neatness)
+      font-size: rem(16)
+      line-height: rem(26)
   a
     color: #303841
     &:hover
@@ -97,3 +106,5 @@ section.work
   img
     width: 100%
     margin: rem(60) auto
+    +media($neatness)
+      margin: rem(15) auto
