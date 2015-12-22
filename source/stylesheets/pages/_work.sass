@@ -67,18 +67,25 @@ section.work
       family: 'San Francisco'
       size: rem(40)
       weight: 700
-    color: #333
+    color: #303841
     margin: rem(10) 0 rem(100) 0
   h2
     font:
       family: 'San Francisco'
       weight: 700
     margin: 0 0 rem(10) 0
-    border-top: rem(1) solid darken(whitesmoke, 20%)
     padding-top: rem(60)
+    &:not(:first-child)
+      border-top: rem(1) solid darken(whitesmoke, 20%)
   p
     max-width: rem(800)
     margin:  0 auto
+  a
+    color: #303841
+    &:hover
+      color: darken(#303841, 10%)
+    &:visited
+      color: #303841
   ul
     margin: 0
     padding: 0
