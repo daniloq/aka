@@ -21,7 +21,7 @@
   src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff')
 
 body.work
-  background: whitesmoke
+  background: white
   line-height: rem(32)
   color: #717171
   font:
@@ -29,16 +29,19 @@ body.work
     weight: 400
     size: rem(18)
   padding-top: rem(120)
+  +media($neatness)
+    padding-top: rem(30)
 
 small
   text-transform: uppercase
+  color: darken(whitesmoke, 30%)
   font:
     family: 'San Francisco'
-    weight: 700
-    size: rem(12)
+    weight: 400
+    size: rem(18)
 
 .thumb
-  max-width: rem(800)
+  max-width: rem(650)
   display: block
   margin: rem(60) auto
 
@@ -61,14 +64,29 @@ section.work
   text-align: center
   article
     margin: 0 auto
-    max-width: rem(1200)
+    max-width: rem(900)
+    +media($neatness)
+      padding: 0 rem(10)
   h1
     font:
       family: 'San Francisco'
       size: rem(40)
       weight: 700
     color: #303841
-    margin: rem(10) 0 rem(100) 0
+    margin: rem(10) 0 0 0
+    line-height: 0
+    img
+      width: rem(666)
+      margin: 0 0 rem(30) 0
+      +media($neatness)
+        width: rem(200)
+  small
+    margin: 0 auto rem(120)
+    display: block
+    +media($neatness)
+      width: rem(200)
+      font-size: rem(10)
+      margin: 0 auto rem(30)
   h2
     font:
       family: 'San Francisco'
@@ -76,10 +94,15 @@ section.work
     margin: 0 0 rem(10) 0
     padding-top: rem(60)
     &:not(:first-child)
-      border-top: rem(1) solid darken(whitesmoke, 20%)
+      border-top: rem(1) solid darken(whitesmoke, 7%)
+    +media($neatness)
+      font-size: rem(18)
   p
     max-width: rem(800)
     margin:  0 auto
+    +media($neatness)
+      font-size: rem(16)
+      line-height: rem(26)
   a
     color: #303841
     &:hover
@@ -97,3 +120,5 @@ section.work
   img
     width: 100%
     margin: rem(60) auto
+    +media($neatness)
+      margin: rem(15) auto
