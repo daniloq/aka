@@ -1,17 +1,19 @@
 section.work 
   article
     h1 
-      img src='images/copy-and-paste.svg'
-    small Danilo K. Quilaton, Jr. - Selected Works
-    h2 Radfaces
+      img src='images/copy-and-paste.svg'  
+    small 
+      a<(href='/') Danilo K. Quilaton, Jr. 
+      | - Selected Works  
+    h2 Radfaces  
     p 
-      | If you like making prototypes, need dem avatars, and on that 80's early 90's tip, this 
-      a<(href='http://www.radfaces.com/', target='_blank')shit 
+      | If you like making prototypes, need dem avatars, and on that 80's early 90's tip, this  
+      a<(href='http://www.radfaces.com/', target='_blank')shit
       | is for you!
-    .tags
-      .tag Branding
-      .tag Front-end
-      .tag Hack-a-thon
+    .tags  
+      .tag Branding  
+      .tag Front-end  
+      .tag Hack-a-thon  
     img src='https://dl.dropboxusercontent.com/u/498650/examples/radfaces.png' style='width: 300px'
     img.thumb src='https://dl.dropboxusercontent.com/u/498650/examples/radfaces-preview.png'
     img.thumb src='https://d13yacurqjgara.cloudfront.net/users/251809/screenshots/2376961/radfaces.gif'
@@ -115,4 +117,26 @@ section.work
     img src='https://dl.dropboxusercontent.com/u/498650/examples/nflshop-TLP2.jpg' 
     img.thumb src='https://dl.dropboxusercontent.com/u/498650/examples/USSAPrintAd.jpg' 
     img src='https://dl.dropboxusercontent.com/u/498650/examples/Fanatics-one-page-checkout.jpg' 
-    img src='https://dl.dropboxusercontent.com/u/498650/examples/fanshop-example2.jpg' 
+    img src='https://dl.dropboxusercontent.com/u/498650/examples/fanshop-example2.jpg'
+    a.scrollup(href='#')
+      i.ion-android-arrow-up
+  footer
+    | Made with
+    i.ion-ios-heart
+    | in Jacksonville, FL.,
+    = Time.now.year
+
+javascript:
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+    } else {
+        $('.scrollup').fadeOut();
+    }
+  });
+  $('.scrollup').click(function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+  });

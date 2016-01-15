@@ -31,14 +31,21 @@ body.work
   padding-top: rem(120)
   +media($neatness)
     padding-top: rem(30)
-
-small
-  text-transform: uppercase
-  color: darken(whitesmoke, 30%)
-  font:
-    family: 'San Francisco'
-    weight: 400
-    size: rem(18)
+  small
+    text-transform: uppercase
+    color: darken(whitesmoke, 30%)
+    font:
+      family: 'San Francisco'
+      weight: 400
+      size: rem(18)
+    a
+      text-decoration: none
+      color: darken(whitesmoke, 30%)
+      +transition(all .3s)
+      &:visited
+        color: darken(whitesmoke, 30%)
+      &:hover
+        color: #717171
 
 .thumb
   max-width: rem(650)
@@ -122,3 +129,19 @@ section.work
     margin: rem(60) auto
     +media($neatness)
       margin: rem(15) auto
+
+.scrollup
+  width: rem(40)
+  height: rem(40)
+  line-height: rem(40)
+  position: fixed
+  bottom: rem(50)
+  right: rem(100)
+  display: none
+  background: lighten(#717171, 5%)
+  border-radius: 50%
+  +media($neatness)
+    right: rem(10)
+    bottom: rem(10)
+  i
+    color: white
