@@ -31,18 +31,18 @@
     +media($neatness)
       font-size: rem(18)
       line-height: rem(28)
-  video#video
-    position: fixed
-    right: 0
-    bottom: 0
-    min-width: 100%
-    min-height: 100%
-    width: auto
-    height: auto
-    z-index: -100
-    background-size: cover
-    +media($neatness)
-      display: none
+  // video#video
+  //   position: fixed
+  //   right: 0
+  //   bottom: 0
+  //   min-width: 100%
+  //   min-height: 100%
+  //   width: auto
+  //   height: auto
+  //   z-index: -100
+  //   background-size: cover
+  //   +media($neatness)
+  //     display: none
   br
     +media($neatness)
       display: none
@@ -58,3 +58,16 @@
         padding-bottom: 0
         border-bottom: none
         font-size: rem(27)
+
+aside
+  +clearfix
+  background: url('../images/biking.gif') no-repeat
+  background-size: cover
+  background-position: bottom center
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: -1
+  height: 100vh
+  width: 100%
