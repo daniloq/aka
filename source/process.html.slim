@@ -1,12 +1,40 @@
-header.process__header
-  h1 What I do everyday.
-section.process__content
-  p 
-    | What's up? Me llamo Danilo. Thanks for being
-    b< curious.  
-  p
-    | I'm a 
-    b< multi-disciplinary product designer 
-    | who helps teams build the right solution for the right customers.
-  P
-    | I hope my toolbox of design, code, and epathnology either solves a customers problem or brings them delight.
+.process
+  .process__container
+    .process__header
+      h1 Hola, Netflix! 🎉
+    .process__content
+      h2 Txtout
+      h4 What
+      p TxtOut is an attendance tracking tool that allows employees to notify their employers if they will be late or absent via text message. The dashboard is an efficient way for staffing managers to view employee attendance quickly with by-the-minute updates.
+      h4 Problem
+      p Ebay called our team and asked if we could come up with a digital solution to assist their staffing managers. Their staffing managers had continued to have problems meeting demand of recruiting warehouse workers in several locations. 
+      P Upon visiting one of the warehouse locations and talking to staff managers we found that they had little time to recruit and build upon their workforce. About 60% of their day was spent tracking down employees that didn't show up for work, listening to voicemail messages from employees that called out, and manually inputing the employee's name, reason for calling out, and when the employee was expected to return into a giant Excel spreadsheet.
+      h4 Solution
+      p Our hypotheis was that if we automate the manual input part of the staff managers day, they would have more time to put together recruitment campaigns to bring on new people.
+      p MVP: Within one day we built a text bot using Twilio's API where warehouse workers could text into a number and get prompted to type their full name, the reason they were going to be out, and when they would be returning. All info gathered from the text bot piped directly into a simple web app where staffing managers could export a report.
+    .process__image
+      img src='https://dl.dropboxusercontent.com/u/498650/examples/txtout-mvp.png' style='max-width: 400px'
+      i The image above shows our second iteration aimed at normalizing the info we received from the warehouse workers.
+    .process__image
+      img src='https://dl.dropboxusercontent.com/u/498650/examples/txtout-desktop-sample.jpg'
+      i The image above is the web app view for staffing managers where can see the total amount of employees that called out, that are going to be late, or tried to call out but didn't finish all the prompts.
+    .process__content
+      h2 Fetch
+      h4 What
+      p Fetch is a web-based application that empowers Adecco recruiters to call, email and text message candidates and associates.
+      h4 Problem
+      p Adecco recruiters were spending a good chuck of their day composing and sending emails to potential candidates and getting really bad response rates for said emails.
+      p Through several user interviews with recruiters we discovered they were casting a wide net by using out of date lead sheets with no historical data showing when they last reached out to a candidate, nor any info stored for a candidates job preferences.
+      h4 Solution
+      p Our hypothesis was that potential candidates would respond faster and more often to campaigns targeted at them based on their location, pay rate, job type, and contact method preferences.
+    .process__image
+      img src='https://dl.dropboxusercontent.com/u/498650/examples/fetch-new-campaign.png'
+      i The image above shows the campaign creation view for recruiters where they can pick the type of campaign they want to run, the delivery method, select recipients based on skill, location and status, input specifc details about the job opportunity and preview the message.
+    .process__image
+      img src='https://dl.dropboxusercontent.com/u/498650/examples/fetch-personalization.gif'
+      i Iterating further, we came up with the assumption that users would respond even better to personalized messages. The above image is a gif of a protoytpe I built with Sketch and Invision that I used to run several user tests. 
+    .process__image
+      img src='https://dl.dropboxusercontent.com/u/498650/examples/fetch-dashboard.png'
+      i Recruiters now had the ability to run multiple campaigns at a time, track each campaigns progress, and use campaign reports to generate new fine tuned lead lists.
+
+    

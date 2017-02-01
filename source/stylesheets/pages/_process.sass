@@ -1,9 +1,42 @@
-.process__header
-  text-align: center
+@import 'components/sf-fonts'
 
-.process__content
-  +display(flex)
-  +align-items(center)
-  +flex-direction(column)
+.process
+  font:
+    family: 'San Francisco'
+    weight: 400
+    size: rem(18)
+  line-height: rem(28)
   p
-    width: rem(500)
+    color: #8492A6
+  &__container
+    +display(flex)
+    +align-items(center)
+    +flex-direction(column)
+  &__header
+    text-align: center
+    h1
+      color: #221f1f
+      font:
+        size: rem(64)
+  &__content
+    text-align: left
+    width: rem(600)
+    color: #1F2D3D
+    h2
+      font:
+        weight: 600
+      color: #e50914
+    h4
+      color: #221f1f
+  &__image
+    img
+      max-width: rem(1100)
+      display: block
+      margin: 0 auto
+    i
+      display: block
+      max-width: rem(600)
+      color: #8492A6
+      margin: rem(20) auto
+      border-left: rem(2) solid #1F2D3D
+      padding-left: rem(20)
