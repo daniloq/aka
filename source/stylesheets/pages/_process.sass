@@ -1,36 +1,50 @@
-@import 'components/sf-fonts'
-
-body.process
+body.process, body.process-alt
   font:
-    family: 'San Francisco'
-    weight: 400
-    size: rem(18)
-  line-height: rem(28)
+    weight: 300
+    size: 18px
+  line-height: rem(32)
+  h2
+    font:
+      weight: 400
+    color: #47c486
+    text-align: left
+  h3
+    font:
+      weight: 400
+      size: rem(24)
+  h4
+    color: #3c4858
+    font:
+      weight: 400
+    text-transform: uppercase
+    margin-bottom: rem(0)
+  h5
+    font:
+      weight: 400
   p
-    color: #8492A6
+    color: #8492a6
+    font:
+      size: rem(18)
+    margin: rem(10) 0 rem(30) 0
+    
+.process__divider
+  border: 0
+  background: #dddddd
+  height: rem(1)
+  width: 100%
+  margin: rem(60) 0
     
 .process__container
   +display(flex)
   +align-items(center)
   +flex-direction(column)
-      
+    
 .process__header
   text-align: center
-  h1
-    color: #221f1f
-    font:
-      size: rem(64)
-        
+
 .process__content
   text-align: left
   width: rem(600)
-  color: #1F2D3D
-  h2
-    font:
-      weight: 600
-    color: #e50914
-  h4
-    color: #221f1f
       
 .process__image
   img
@@ -40,7 +54,9 @@ body.process
   i
     display: block
     max-width: rem(600)
-    color: #8492A6
+    color: #8492a6
     margin: rem(20) auto
-    border-left: rem(2) solid #1F2D3D
+    border-left: rem(2) solid #47c486
     padding-left: rem(20)
+    font:
+      weight: 400
